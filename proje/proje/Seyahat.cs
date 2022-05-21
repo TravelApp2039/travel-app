@@ -21,25 +21,11 @@ namespace proje
             _konaklama = _soyutfabrika.konaklamabilgi();
             _ulasim = _soyutfabrika.ulasimbilgi();
         }
-        public SeyahatManager(SoyutFabrika konaklama, string name)//silme işlemi
-        {
-            //SqlConnection sql = new SqlConnection("Data Source=DESKTOP-0QQSKNK\\SQLEXPRESS;Initial Catalog=YazilimMimari;Integrated Security=True");
-            //sql.Open();
-            //SqlCommand komut = new SqlCommand("delete from TBL_Tablo where Id=@p1", sql);
-            //komut.Parameters.AddWithValue("@p1", id);
-            //komut.ExecuteNonQuery();
-            //sql.Close();
-            //_soyutfabrika = konaklama;
-            //_konaklama = _soyutfabrika.konaklamabilgi();
-            //_ulasim = _soyutfabrika.ulasimbilgi();
-            //string ulasim = _ulasim.ulasiptal();
-            //string Konaklama = _konaklama.Konakiptal();
-        }
 
 
         public void seyahatsil(int id)
         {
-            SqlConnection sql = new SqlConnection("Data Source=DESKTOP-0QQSKNK\\SQLEXPRESS;Initial Catalog=YazilimMimari;Integrated Security=True");
+            SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
             sql.Open();
             SqlCommand komut = new SqlCommand("delete from TBL_Tablo where Id=@p1", sql);
             komut.Parameters.AddWithValue("@p1", id);
@@ -52,7 +38,7 @@ namespace proje
         public void ulasimsil(int id)
         {
             string ulasim = _ulasim.ulasiptal();
-            SqlConnection sql = new SqlConnection("Data Source=DESKTOP-0QQSKNK\\SQLEXPRESS;Initial Catalog=YazilimMimari;Integrated Security=True");
+            SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
             sql.Open();
             SqlCommand komut = new SqlCommand("update TBL_Tablo set Ulasim=@p1 Where Id=@p2", sql);
             komut.Parameters.AddWithValue("@p1", ulasim);
@@ -64,7 +50,7 @@ namespace proje
         public void konaksil(int id)
         {
             string konaklama = _konaklama.Konakiptal();
-            SqlConnection sql = new SqlConnection("Data Source=DESKTOP-0QQSKNK\\SQLEXPRESS;Initial Catalog=YazilimMimari;Integrated Security=True");
+            SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
             sql.Open();
             SqlCommand komut = new SqlCommand("update TBL_Tablo set Konaklama=@p1 Where Id=@p2", sql);
             komut.Parameters.AddWithValue("@p1", konaklama);
@@ -77,27 +63,13 @@ namespace proje
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         public void GetAll(string ad,string soyad,string tc,string telefon,string gidis,string donus,string fiyat)
         {
             string ulasim=_ulasim.ulas();
            string konaklam=_konaklama.Konak();
-            SqlConnection sql = new SqlConnection("Data Source=DESKTOP-0QQSKNK\\SQLEXPRESS;Initial Catalog=YazilimMimari;Integrated Security=True");
+            SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
             sql.Open();
-            SqlCommand komut = new SqlCommand("insert into TBL_Tablo (Ad,Soyad,Tc,Telefon,GİdisTarihi,DonusTarihi,Fiyat,Ulasim,Konaklama) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", sql);
+            SqlCommand komut = new SqlCommand("insert into TBL_Tablo (Ad,Soyad,Tc,Telefon,GidisTarihi,DonusTarihi,Fiyat,Ulasim,Konaklama) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", sql);
             komut.Parameters.AddWithValue("@p1", ad);
             komut.Parameters.AddWithValue("@p2", soyad);
             komut.Parameters.AddWithValue("@p3", tc);

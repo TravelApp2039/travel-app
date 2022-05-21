@@ -125,7 +125,7 @@ namespace proje
         }
         public void goruntule()
         {
-            SqlConnection sql = new SqlConnection("Data Source=DESKTOP-0QQSKNK\\SQLEXPRESS;Initial Catalog=YazilimMimari;Integrated Security=True");
+            SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
             sql.Open();
             SqlDataAdapter d = new SqlDataAdapter("Select * From TBL_Tablo", sql);
             DataSet ds = new DataSet();
