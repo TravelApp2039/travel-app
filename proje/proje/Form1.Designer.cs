@@ -50,6 +50,8 @@ namespace proje
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.label8 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -157,15 +159,15 @@ namespace proje
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 29);
             this.label7.TabIndex = 11;
-            this.label7.Text = "165";
+            this.label7.Text = "100";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(510, 353);
+            this.button1.Location = new System.Drawing.Point(550, 306);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 39);
             this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
+            this.button1.Text = "Kaydet";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -252,11 +254,33 @@ namespace proje
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 16;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(646, 399);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 39);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Kayıtları Görüntüle";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label9.Location = new System.Drawing.Point(250, 363);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(27, 29);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "₺";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox2);
@@ -308,6 +332,8 @@ namespace proje
         private System.Windows.Forms.RadioButton radioButton4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label9;
     }
 }
 
