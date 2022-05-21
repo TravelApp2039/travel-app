@@ -8,4 +8,3 @@ C:\Users\yildi\Desktop\yazılım mimarisi ve tasarımı\proje\proje\obj\Debug\pr
 C:\Users\yildi\Desktop\yazılım mimarisi ve tasarımı\proje\proje\obj\Debug\proje.exe
 C:\Users\yildi\Desktop\yazılım mimarisi ve tasarımı\proje\proje\obj\Debug\proje.pdb
 C:\Users\yildi\Desktop\yazılım mimarisi ve tasarımı\proje\proje\obj\Debug\proje.Form1.resources
-C:\Users\yildi\Desktop\yazılım mimarisi ve tasarımı\proje\proje\obj\Debug\proje.FRM_Goruntuleme.resources
