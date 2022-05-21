@@ -34,7 +34,7 @@ namespace proje
             int secilialan = dataGridView1.SelectedCells[0].RowIndex;
             int ıd = Convert.ToInt32(dataGridView1.Rows[secilialan].Cells[0].Value);
             SeyahatManager sm = new SeyahatManager(new Ucak_Cadir());
-                sm.konaksil(ıd);
+                sm.KonakSil(ıd);
                 goruntule();
             konaklama();
             //int secilialan = dataGridView1.SelectedCells[0].RowIndex;
@@ -53,7 +53,7 @@ namespace proje
             {
                 MessageBox.Show("Zaten ulaşım bilgisi iptal edilmiş olduğu için Rezervasyonunuz iptal edilmiştir.");
                 SeyahatManager sm = new SeyahatManager();
-                sm.seyahatsil(ıd);
+                sm.SeyahatSil(ıd);
                 goruntule();
             }
             else
@@ -67,7 +67,7 @@ namespace proje
                     if (result == DialogResult.Yes)
                     {
                         SeyahatManager sm = new SeyahatManager();
-                        sm.seyahatsil(ıd);
+                        sm.SeyahatSil(ıd);
                         goruntule();
 
                     }
@@ -93,7 +93,7 @@ namespace proje
             {
                 MessageBox.Show("Zaten Konaklama bilgisi iptal edilmiş olduğu için Rezervasyonunuz iptal edilmiştir.");
                 SeyahatManager smd = new SeyahatManager();
-                smd.seyahatsil(ıd);
+                smd.SeyahatSil(ıd);
                 goruntule();
             }
             else
@@ -107,7 +107,7 @@ namespace proje
                     if (result == DialogResult.Yes)
                     {
                         SeyahatManager sm = new SeyahatManager();
-                        sm.seyahatsil(ıd);
+                        sm.SeyahatSil(ıd);
                         goruntule();
 
                     }
@@ -138,7 +138,7 @@ namespace proje
             int secilialan = dataGridView1.SelectedCells[0].RowIndex;
             int ıd = Convert.ToInt32(dataGridView1.Rows[secilialan].Cells[0].Value);
             SeyahatManager sm = new SeyahatManager(new Otobus_Cadir());
-            sm.ulasimsil(ıd);
+            sm.UlasimSil(ıd);
             goruntule();
             ulasim();
         }

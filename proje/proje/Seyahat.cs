@@ -18,12 +18,12 @@ namespace proje
         public SeyahatManager(SoyutFabrika soyutfabrika)
         {
             _soyutfabrika = soyutfabrika;
-            _konaklama = _soyutfabrika.konaklamabilgi();
-            _ulasim = _soyutfabrika.ulasimbilgi();
+            _konaklama = _soyutfabrika.KonaklamaBilgi();
+            _ulasim = _soyutfabrika.UlasimBilgi();
         }
 
 
-        public void seyahatsil(int id)
+        public void SeyahatSil(int id)
         {
             SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
             sql.Open();
@@ -35,9 +35,9 @@ namespace proje
 
 
 
-        public void ulasimsil(int id)
+        public void UlasimSil(int id)
         {
-            string ulasim = _ulasim.ulasiptal();
+            string ulasim = _ulasim.UlasIptal();
             SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
             sql.Open();
             SqlCommand komut = new SqlCommand("update TBL_Tablo set Ulasim=@p1 Where Id=@p2", sql);
@@ -47,7 +47,7 @@ namespace proje
             sql.Close();
 
         }
-        public void konaksil(int id)
+        public void KonakSil(int id)
         {
             string konaklama = _konaklama.Konakiptal();
             SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
@@ -65,7 +65,7 @@ namespace proje
 
         public void GetAll(string ad,string soyad,string tc,string telefon,string gidis,string donus,string fiyat)
         {
-            string ulasim=_ulasim.ulas();
+            string ulasim=_ulasim.Ulas();
            string konaklam=_konaklama.Konak();
             SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
             sql.Open();
@@ -87,29 +87,29 @@ namespace proje
 
     public abstract class Ulasim
     {
-        public abstract string ulas();
-        public abstract string ulasiptal();
+        public abstract string Ulas();
+        public abstract string UlasIptal();
 
     }
     class ucak : Ulasim
     {
-        public override string ulas()
+        public override string Ulas()
         {
             return "Ucak";
         }
-        public override string ulasiptal()
+        public override string UlasIptal()
         {
             return "Ulaşım bilgisi iptal edildi";
         }
     }
     class otobus : Ulasim
     {
-        public override string ulas()
+        public override string Ulas()
         {
             return "Otobus";
 
         }
-        public override string ulasiptal()
+        public override string UlasIptal()
         {
             return "Ulaşım bilgisi iptal edildi";
         }

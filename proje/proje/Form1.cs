@@ -40,7 +40,7 @@ namespace proje
             }
             else if (radioButton2.Checked == true && radioButton4.Checked == true)
             {
-                SeyahatManager sm = new SeyahatManager(new Otobus_otel());
+                SeyahatManager sm = new SeyahatManager(new Otobus_Otel());
                 sm.GetAll(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, dateTimePicker1.Text, dateTimePicker2.Text, label7.Text);
                 MessageBox.Show("kayit tamamlandi");
             }

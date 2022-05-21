@@ -8,19 +8,19 @@ namespace proje
 {
     public abstract class SoyutFabrika
     {
-        public abstract Ulasim ulasimbilgi();
-        public abstract Konaklama konaklamabilgi();
+        public abstract Ulasim UlasimBilgi();
+        public abstract Konaklama KonaklamaBilgi();
     }
 
 
-    public class Otobus_otel : SoyutFabrika
+    public class Otobus_Otel : SoyutFabrika
     {
-        public override Konaklama konaklamabilgi()
+        public override Konaklama KonaklamaBilgi()
         {
             return new Otel();
         }
 
-        public override Ulasim ulasimbilgi()
+        public override Ulasim UlasimBilgi()
         {
             return new otobus();
         }
@@ -28,12 +28,12 @@ namespace proje
 
     public class Ucak_Otel : SoyutFabrika
     {
-        public override Konaklama konaklamabilgi()
+        public override Konaklama KonaklamaBilgi()
         {
             return new Otel();
         }
 
-        public override Ulasim ulasimbilgi()
+        public override Ulasim UlasimBilgi()
         {
             return new ucak();
         }
@@ -41,12 +41,12 @@ namespace proje
 
     public class Otobus_Cadir : SoyutFabrika
     {
-        public override Konaklama konaklamabilgi()
+        public override Konaklama KonaklamaBilgi()
         {
             return new Cadir();
         }
 
-        public override Ulasim ulasimbilgi()
+        public override Ulasim UlasimBilgi()
         {
             return new otobus();
         }
@@ -54,12 +54,12 @@ namespace proje
 
     public class Ucak_Cadir : SoyutFabrika
     {
-        public override Konaklama konaklamabilgi()
+        public override Konaklama KonaklamaBilgi()
         {
             return new Cadir();
         }
 
-        public override Ulasim ulasimbilgi()
+        public override Ulasim UlasimBilgi()
         {
             return new ucak();
         }
