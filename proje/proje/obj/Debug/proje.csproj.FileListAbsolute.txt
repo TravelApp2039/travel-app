@@ -21,3 +21,4 @@ C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\travel-app\
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\travel-app\travel-app\proje\proje\obj\Debug\proje.csproj.CoreCompileInputs.cache
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\travel-app\travel-app\proje\proje\obj\Debug\proje.exe
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\travel-app\travel-app\proje\proje\obj\Debug\proje.pdb
+C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\travel-app\travel-app\proje\proje\obj\Debug\proje.frmVeriAktarimi.resources

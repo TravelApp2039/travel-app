@@ -66,7 +66,7 @@ namespace proje
         public void GetAll(string ad,string soyad,string tc,string telefon,string gidis,string donus,string fiyat)
         {
             string ulasim=_ulasim.Ulas();
-           string konaklam=_konaklama.Konak();
+            string konaklam=_konaklama.Konak();
             SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
             sql.Open();
             SqlCommand komut = new SqlCommand("insert into TBL_Tablo (Ad,Soyad,Tc,Telefon,GidisTarihi,DonusTarihi,Fiyat,Ulasim,Konaklama) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", sql);

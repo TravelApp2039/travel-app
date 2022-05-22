@@ -19,7 +19,7 @@ namespace proje
 
         private void FRM_Goruntuleme_Load(object sender, EventArgs e)
         {
-            goruntule();
+            Goruntule();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,13 +35,8 @@ namespace proje
             int ıd = Convert.ToInt32(dataGridView1.Rows[secilialan].Cells[0].Value);
             SeyahatManager sm = new SeyahatManager(new Ucak_Cadir());
                 sm.KonakSil(ıd);
-                goruntule();
+                Goruntule();
             konaklama();
-            //int secilialan = dataGridView1.SelectedCells[0].RowIndex;
-            //int ıd = Convert.ToInt32(dataGridView1.Rows[secilialan].Cells[0].Value);
-            //SeyahatManager sm = new SeyahatManager(ıd);
-            //goruntule();
-            //MessageBox.Show("Silme işlemi tamamlandı");
         }
         public void konaklama()
         {
@@ -49,12 +44,13 @@ namespace proje
             string why = Convert.ToString(dataGridView1.Rows[secilialan].Cells[9].Value);
             int ıd = Convert.ToInt32(dataGridView1.Rows[secilialan].Cells[0].Value);
             string why2 = Convert.ToString(dataGridView1.Rows[secilialan].Cells[8].Value);
+
             if(why2== "Ulaşım bilgisi iptal edildi")
             {
                 MessageBox.Show("Zaten ulaşım bilgisi iptal edilmiş olduğu için Rezervasyonunuz iptal edilmiştir.");
                 SeyahatManager sm = new SeyahatManager();
                 sm.SeyahatSil(ıd);
-                goruntule();
+                Goruntule();
             }
             else
             {
@@ -68,7 +64,7 @@ namespace proje
                     {
                         SeyahatManager sm = new SeyahatManager();
                         sm.SeyahatSil(ıd);
-                        goruntule();
+                        Goruntule();
 
                     }
                     else if (result == DialogResult.No)
@@ -94,7 +90,7 @@ namespace proje
                 MessageBox.Show("Zaten Konaklama bilgisi iptal edilmiş olduğu için Rezervasyonunuz iptal edilmiştir.");
                 SeyahatManager smd = new SeyahatManager();
                 smd.SeyahatSil(ıd);
-                goruntule();
+                Goruntule();
             }
             else
             {
@@ -108,7 +104,7 @@ namespace proje
                     {
                         SeyahatManager sm = new SeyahatManager();
                         sm.SeyahatSil(ıd);
-                        goruntule();
+                        Goruntule();
 
                     }
                     else if (result == DialogResult.No)
@@ -123,7 +119,7 @@ namespace proje
             }
             
         }
-        public void goruntule()
+        public void Goruntule()
         {
             SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
             sql.Open();
@@ -139,8 +135,15 @@ namespace proje
             int ıd = Convert.ToInt32(dataGridView1.Rows[secilialan].Cells[0].Value);
             SeyahatManager sm = new SeyahatManager(new Otobus_Cadir());
             sm.UlasimSil(ıd);
-            goruntule();
+            Goruntule();
             ulasim();
+        }
+
+        private void btnRapor_Click(object sender, EventArgs e)
+        {
+            frmVeriAktarimi frmVeriAktarimi = new frmVeriAktarimi();
+            frmVeriAktarimi.Show();
+            this.Hide();
         }
     }
 }
