@@ -19,7 +19,11 @@ namespace proje
         protected SqlDataReader reader { get; set; }
 
 
-        protected DataTable sqlSutunVerileri()
+
+   
+
+        protected DataTable sqlSutunVerileri()  
+
         {
             DataTable data = null;
             try
