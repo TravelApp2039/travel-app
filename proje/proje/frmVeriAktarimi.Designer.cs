@@ -55,6 +55,7 @@
             this.linklblJSON.TabIndex = 1;
             this.linklblJSON.TabStop = true;
             this.linklblJSON.Text = "JSON ile Raporla";
+            this.linklblJSON.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linklblJSON_LinkClicked);
             // 
             // linklblXML
             // 

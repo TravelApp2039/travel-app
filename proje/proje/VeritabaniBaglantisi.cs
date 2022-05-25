@@ -11,15 +11,15 @@ namespace proje
 {
     public class VeritabaniBaglantisi
     {
-        public static string baglantiString { get; set; } //connectionString
-        public static string tabloAdi { get; set; } //tableString
-        protected string baglantiDurumu {get; set;} //status
+        public static string baglantiString { get; set; } 
+        public static string tabloAdi { get; set; } 
+        protected string baglantiDurumu {get; set;} 
         protected SqlConnection connection { get; set;}
         protected SqlCommand command { get; set; }
         protected SqlDataReader reader { get; set; }
 
 
-        protected DataTable sqlSutunVerileri()  //LoadDataWithAllColumns
+        protected DataTable sqlSutunVerileri()
         {
             DataTable data = null;
             try
@@ -45,7 +45,7 @@ namespace proje
                 return data;
             }
         } 
-        protected DataTable ozelVeritabaniVerileri(string[] sutunAdlari) //LoadDataWithParticularColumns
+        protected DataTable ozelVeritabaniVerileri(string[] sutunAdlari) 
         {
             string sutunlar = "";
             foreach (string sutun in sutunAdlari)
@@ -78,7 +78,7 @@ namespace proje
             }
         }
 
-        protected DataTable sqlSorguVerileri(string sorgu) //LoadDataFromQuery
+        protected DataTable sqlSorguVerileri(string sorgu) 
         {
             DataTable data = null;
             try

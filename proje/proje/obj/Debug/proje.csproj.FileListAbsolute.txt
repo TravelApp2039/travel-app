@@ -22,3 +22,19 @@ C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\travel-app\
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\travel-app\travel-app\proje\proje\obj\Debug\proje.exe
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\travel-app\travel-app\proje\proje\obj\Debug\proje.pdb
 C:\Users\Barış\OneDrive - Manisa Celal Bayar Üniversitesi\Desktop\travel-app\travel-app\proje\proje\obj\Debug\proje.frmVeriAktarimi.resources
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\bin\Debug\proje.exe.config
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\bin\Debug\proje.exe
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\bin\Debug\proje.pdb
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.csproj.AssemblyReference.cache
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.csproj.SuggestedBindingRedirects.cache
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.Form1.resources
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.frmVeriAktarimi.resources
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.FRM_Goruntuleme.resources
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.Properties.Resources.resources
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.csproj.GenerateResource.cache
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.csproj.CoreCompileInputs.cache
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.exe
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.pdb
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\bin\Debug\Newtonsoft.Json.dll
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\bin\Debug\Newtonsoft.Json.xml
+C:\Users\tuglu\OneDrive\Bureau\travel-app\proje\proje\obj\Debug\proje.csproj.CopyComplete

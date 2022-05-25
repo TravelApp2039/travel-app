@@ -24,7 +24,7 @@ namespace proje
 
         private void frmVeriAktarimi_Load(object sender, EventArgs e)
         {
-            baglantiString = @"Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True";
+            baglantiString = "Data Source=LAPTOP-HSOIO2VO\\SQLEXPRESS;Initial Catalog=YazilimMimari;Integrated Security=TRUE";
             tabloAdi = "TBL_Tablo";
             aktarma = new VeriAktarma();
             VeritabaniBaglantisi.baglantiString=baglantiString;
@@ -40,6 +40,12 @@ namespace proje
         private void linklblXML_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             aktarma.XMLraporlama();
+        }
+
+        private void linklblJSON_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            json js = new json();
+            js.getir();
         }
     }
 }

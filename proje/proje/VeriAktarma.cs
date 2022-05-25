@@ -42,7 +42,7 @@ namespace proje
                 string dosyaAdi = null;
                 SaveFileDialog htmlKaydet=new SaveFileDialog();
                 htmlKaydet.Filter = "HTML files|*.html";
-                htmlKaydet.FileName = "HtmlData.html";
+                htmlKaydet.FileName = "HtmlData1.html";
                 if(htmlKaydet.ShowDialog() == DialogResult.OK)
                 {
                     dosyaAdi = htmlKaydet.FileName;
@@ -104,7 +104,7 @@ namespace proje
                 string dosyaAdi = null;
                 SaveFileDialog xmlKaydet=new SaveFileDialog();
                 xmlKaydet.Filter = "XML files |*.xml";
-                xmlKaydet.FileName = "XMLData.xml";
+                xmlKaydet.FileName = "XMLData1.xml";
                 
                 if(xmlKaydet.ShowDialog() == DialogResult.OK)
                 {

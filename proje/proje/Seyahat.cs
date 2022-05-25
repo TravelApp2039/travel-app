@@ -25,7 +25,7 @@ namespace proje
 
         public void SeyahatSil(int id)
         {
-            SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
+            SqlConnection sql = new SqlConnection("Data Source = LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog =YazilimMimari; Integrated Security = TRUE");
             sql.Open();
             SqlCommand komut = new SqlCommand("delete from TBL_Tablo where Id=@p1", sql);
             komut.Parameters.AddWithValue("@p1", id);
@@ -38,7 +38,7 @@ namespace proje
         public void UlasimSil(int id)
         {
             string ulasim = _ulasim.UlasIptal();
-            SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
+            SqlConnection sql = new SqlConnection("Data Source = LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog =YazilimMimari; Integrated Security = TRUE");
             sql.Open();
             SqlCommand komut = new SqlCommand("update TBL_Tablo set Ulasim=@p1 Where Id=@p2", sql);
             komut.Parameters.AddWithValue("@p1", ulasim);
@@ -50,7 +50,7 @@ namespace proje
         public void KonakSil(int id)
         {
             string konaklama = _konaklama.Konakiptal();
-            SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
+            SqlConnection sql = new SqlConnection("Data Source = LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog = YazilimMimari; Integrated Security = TRUE");
             sql.Open();
             SqlCommand komut = new SqlCommand("update TBL_Tablo set Konaklama=@p1 Where Id=@p2", sql);
             komut.Parameters.AddWithValue("@p1", konaklama);
@@ -59,7 +59,7 @@ namespace proje
             sql.Close();
 
         }
-
+       
 
 
 
@@ -67,7 +67,7 @@ namespace proje
         {
             string ulasim=_ulasim.Ulas();
             string konaklam=_konaklama.Konak();
-            SqlConnection sql = new SqlConnection("Data Source=MY-FELLOW;Initial Catalog=YazilimMimari;Integrated Security=True");
+            SqlConnection sql = new SqlConnection("Data Source = LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog = YazilimMimari; Integrated Security = TRUE");
             sql.Open();
             SqlCommand komut = new SqlCommand("insert into TBL_Tablo (Ad,Soyad,Tc,Telefon,GidisTarihi,DonusTarihi,Fiyat,Ulasim,Konaklama) values (@p1,@p2,@p3,@p4,@p5,@p6,@p7,@p8,@p9)", sql);
             komut.Parameters.AddWithValue("@p1", ad);
