@@ -45,7 +45,7 @@ namespace proje
         private void linklblJSON_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             json js = new json();
-            js.getir();
+            js.kaydet();
         }
     }
 }

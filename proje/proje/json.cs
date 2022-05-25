@@ -15,7 +15,7 @@ namespace proje
         SqlConnection connect = new SqlConnection("Data Source = LAPTOP-HSOIO2VO\\SQLEXPRESS; Initial Catalog = YazilimMimari; Integrated Security = TRUE");
 
 
-public void getir()
+public void kaydet()
         {
             try
             {
